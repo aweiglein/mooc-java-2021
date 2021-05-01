@@ -35,8 +35,6 @@ public class AdvancedAstrology {
     }
 
     public static void main(String[] args) {
-        // The tests are not checking the main, so you can modify it freely.
-
         christmasTree(8);
     }
 }
