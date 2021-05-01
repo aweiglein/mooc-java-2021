@@ -5,17 +5,19 @@ public class NumberOfNegativeNumbers {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Give a number:");
         
-        int num = scanner.nextInt();
         int count = 0;
         
-        while (num !=0) {
-            if (num <0) {
-                count++;
-            }
+        while (true) {
             System.out.println("Give a number:");
-            num = scanner.nextInt();
+            int num = Integer.valueOf(scanner.nextLine());
+            
+            if (num == 0) {
+                break;
+            }
+            if (num < 0) {
+                count = count +1;
+            }
         }
         System.out.println("Number of negative numbers: " + count);
     }
